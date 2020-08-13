@@ -1,0 +1,22 @@
+body {
+    background: #fff;
+    color: #111;
+    font-family: monospace;
+    max-width: 59em;
+    } 
+a { color: #66f; }
+a:visited { color: #f6f; }
+
+.author, .date { display: none; }
+figure { margin: 0 1em; }
+p img { margin: 0 1em; float:right; clear:right;}
+figure img { max-width: 50em; }
+code {
+    background:#222;
+    padding: 0 .5em;
+    border: thin dotted gray;
+}
+body.root p#nav { display: none; }
+
+}
+
