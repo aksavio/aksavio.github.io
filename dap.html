@@ -1,0 +1,215 @@
+
+<html >
+  
+  
+  <meta name="author" content="akash">
+  <title>Grape</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+	  * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    position: absolute;
+  left: 100px;
+  top: 500px;
+  
+}
+.next {
+    position: absolute;
+  right: 100px;
+  top: 500px;
+  
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  </style>
+  <link rel="stylesheet" href="./Porolio_html/style.css">
+  <body>
+ 
+<h1>_hello</h1>
+<h2>_i'm Akash Savio Sen</h2><br>
+
+<table align="center">
+
+
+<tbody>
+
+<tr>
+<td style="width:300px;padding:10px;vertical-align:top;"><b></b></td>
+<td style="width:300px;padding:10px;vertical-align:top;"><b></b></td>
+<td style="width:1050px;padding:10px;vertical-align:top;">
+  <h3 id="Work">Digital Audio Player</h3>
+<p>There is some aspect of the product which is directly linked to it’s usability that makes the owner attached to the product.
+ <br><br>
+<img src="dap/1.jpg" alt="Grape" width="800" >
+<br><br>&nbsp;<br><br>&nbsp;
+ <video width="800"  controls>
+  <source src="dap/video.mp4" type="video/mp4">
+  </video><br>has copyrighted music.<br><br>
+<h3 id="Work">Inspiration</h3>
+While Nikon and Canon make exceptional professional cameras and are absolutely necessary where performance is preferred over everything, but most of the users of cameras made by Leica and Fuji who make cameras not strictly for professional market but for the luxury market where people like the process and the engagement wit the product while photographing rather than having the camera out of the way and focus on the task at hand like Nikon & Canon.
+<br><br><br><br>
+<img src="dap/canon.jpg" alt="canon" width="400">&nbsp;<img src="dap/leica.jpg" alt="leica" width="400"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not having a DIGITAL screen on a DIGITAL camera<br>
+
+
+
+
+ 
+
+
+
+
+<img src="sequence_01.gif" alt="1" width="400" >
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+I then simulated the grapes which was less work and it automatically added randomness.<br>
+<img src="Sequence 01_1.gif" alt="1" width="400" >
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Top View<br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="Sequence 01_2.gif" alt="1" width="400" >
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Bottom View<br><br><br><br><br><br><br><br><br><br><br><br>
+
+From then it was just the materials, lighting and composition.<br>
+<img src="render.gif" alt="1" width="400" >
+<h2 style="text-align:center">Moto e2</h2>
+<center>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <img src="moto/moto_01.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+    <img src="moto/moto_02.jpg" style="width:80%">
+  </div>
+
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</center>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<p> </p>
+</td> 
+  
+
+
+
+
+
+</body>
+  </html>
