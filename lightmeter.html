@@ -7,49 +7,49 @@
 <body class='typora-export os-windows'><div class='typora-export-content'>
 <div id='write'  class=''><h1 id='light-meter'><span>Light Meter</span></h1>
  <p><span>is quite simply a device that measures the intensity of light. A photographic equipment that helps the photographer or the camera know a desired exposure for an image.</span></p>
- <p><img src=" html\images\lm_start.webp" referrerpolicy="no-referrer" alt="lm_start"></p>
+ <p><img src=" html\images\lm_start.jpg" referrerpolicy="no-referrer" alt="lm_start"></p>
  <p>&nbsp;</p><h2 id='theory'><span>Theory</span></h2>
  <p><span>Your camera does some math and finds out what settings to use while clicking a picture. Today camera software is powered by AI and Machine learning and the sensors are quite advance to get a good picture no matter what the situation may be. </span></p>
  <p><span>While cameras measure reflected light and compare it to a grey chart and determine what the image exposure should be like. The camera&#39;s light meter is quite easily tricked. If the light meter is pointing towards a black suite it will try to over expose the image till it gets a middle grey value, and on the contrary if its pointing towards a white dress it will try to under expose.</span></p>
- <p><img src=" html\images\exp.webp" referrerpolicy="no-referrer" alt="exp"></p>
+ <p><img src=" html\images\exp.jpg" referrerpolicy="no-referrer" alt="exp"></p>
  <p><span>A hand-held light meter (incident light meter) solves this by measuring the light falling on the subject rather than the light being reflecting off of them. It measured the value and lets you dial in the camera settings you want to use for that picture.</span></p>
  <p><span> </span><img src=" html\images\vs.png" referrerpolicy="no-referrer" alt="vs"></p>
  <p><span>Today one could say that this equipment is not that useful as we could check the picture we have taken and adjust whatever seems to be wrong with it, but it would be an indispensable tool for someone doing film photography, as they would be only able to see the results once the film is processed and they might not get another chance to photograph that seen.</span></p>
  <p>&nbsp;</p><h2 id='why-make-one'><span>Why make one?</span></h2>
  <p><strong><span>I want to.</span></strong></p>
  <p><span>And looking at the prices of existing products it was quite clear buying one is not a good option.</span></p>
- <p><img src=" html\images\lm_prices.webp" referrerpolicy="no-referrer" alt="lm_prices"></p>
+ <p><img src=" html\images\lm_prices.jpg" referrerpolicy="no-referrer" alt="lm_prices"></p>
  <p><span>I looked into the things required for to make a light meter and here is a bill of materials.</span></p><figure><table><thead><tr><th><span>Component</span></th><th><span>Price in rupees</span></th><th><span>USD</span></th></tr></thead><tbody><tr><td><span>Light Sensor (BH1750)</span></td><td><span>229</span></td><td><span>3</span></td></tr><tr><td><span>Arduino Pro Mini</span></td><td><span>389</span></td><td><span>5.23</span></td></tr><tr><td><span>LI-ION Cell</span></td><td><span>349</span></td><td><span>4.69</span></td></tr><tr><td><span>Charging Module (TP-4056)</span></td><td><span>59</span></td><td><span>0.79</span></td></tr><tr><td><span>Display</span></td><td><span>350</span></td><td><span>4.70</span></td></tr><tr><td><span>PLA</span></td><td><span>~200</span></td><td><span>2.69</span></td></tr><tr><td><span>Misc.</span></td><td><span>~200</span></td><td><span>2.69</span></td></tr></tbody></table></figure>
  <p><strong><span>Total: 1,776 Rupees or 24 USD.</span></strong></p>
  <p><span>I almost immediately got the breadboard prototype working, I started to code the user interface and the measuring functions but I scrapped that after finding this <a href="https://github.com/vpominchuk/lightmeter">gem</a>, a much better version of what I was attempting available as open-source code.</span></p>
- <p><img src=" html\images\lm_prototype.webp" referrerpolicy="no-referrer" alt="lm_prototype"></p>
+ <p><img src=" html\images\lm_prototype.jpg" referrerpolicy="no-referrer" alt="lm_prototype"></p>
  <p>&nbsp;</p>
  <p><span>Now all that was left was to make this look more a product. This prototype sat in a box for almost a month till I got access to a 3D printer. I immediately started sketching a design that would hold all the electronic components.</span></p><h2 id='challenges'><span>Challenges</span></h2><h3 id='power-supply'><span>Power Supply</span></h3><ul><li><span>While it could theoretically run on 2 AA batteries, I imagen the battery life to be not as good. As first the Arduino runs on 5v or 3.3v and providing just 3v would be demanding a lot form the circuit.</span></li><li><span>Designing an enclosure big enough for 3 AA batteries was not quite possible as it would increase the size and weight of the final product.</span></li><li><span>If there is a removable battery, there are more movable parts that snap fir together or something which adds more complexity to a design and could also make the design more fragile.</span></li><li><span>Settled on a LI-ION cell (3.7v) and a charging IC-TP-4056. Now the battery is not removable but could be charged with a USB-C cable.</span></li></ul>
- <p><img src=" html\images\lm_batteries.webp" referrerpolicy="no-referrer" alt="lm_batteries"></p><h3 id='shape'><span>Shape</span></h3><ul><li><span>There are certain restrictions to the shape you are able to make when you are tied down to one manufacturing process.</span></li><li><span>3D printers are not actually 3D its more like 2.5D. As you have freedom on the X and Y axis but not truly on the Z.</span></li><li><span>Supports: We have to design things with supports in mind as the nozzle of the printer cannot lay plastic on air hence many shapes are not possible and many complex shapes would be fighting with the limits of the 3D printer, or would have sub power surface finish.</span></li></ul>
- <p><img src=" html\images\lm_shape.webp" referrerpolicy="no-referrer" alt="lm_shape"></p><h3 id='migrating-to-a-different-slicer-software'><span>Migrating to a different slicer software</span></h3>
+ <p><img src=" html\images\lm_batteries.jpg" referrerpolicy="no-referrer" alt="lm_batteries"></p><h3 id='shape'><span>Shape</span></h3><ul><li><span>There are certain restrictions to the shape you are able to make when you are tied down to one manufacturing process.</span></li><li><span>3D printers are not actually 3D its more like 2.5D. As you have freedom on the X and Y axis but not truly on the Z.</span></li><li><span>Supports: We have to design things with supports in mind as the nozzle of the printer cannot lay plastic on air hence many shapes are not possible and many complex shapes would be fighting with the limits of the 3D printer, or would have sub power surface finish.</span></li></ul>
+ <p><img src=" html\images\lm_shape.jpg" referrerpolicy="no-referrer" alt="lm_shape"></p><h3 id='migrating-to-a-different-slicer-software'><span>Migrating to a different slicer software</span></h3>
  <p><span>Slicing software&#39;s are the ones which transform 3D geometry to machine code which the printer can perform.</span></p>
  <p><span>Here is an example of a few places where Prusa Slicer fell short and I had to use Cura for my prints.</span></p>
- <p><img src=" html\images\lm_slicer1.webp" referrerpolicy="no-referrer" alt="lm_slicer1"></p>
+ <p><img src=" html\images\lm_slicer1.jpg" referrerpolicy="no-referrer" alt="lm_slicer1"></p>
  <p><span>As you can see Cura&#39;s supports (Light blue) are much easier to remove and use less filament than Prusa slicer.</span></p><h3 id='dome-mechanism'><span>Dome Mechanism </span></h3>
  <p><span>The theory of this mechanism is simple, have the dome exposed to the environment to pick up ambient light, or let it be recessed in the body with just the top part exposed to pick up light from a particular source.</span></p>
- <p><img src=" html\images\lm_dome.webp" referrerpolicy="no-referrer" alt="lm_dome"></p>
+ <p><img src=" html\images\lm_dome.jpg" referrerpolicy="no-referrer" alt="lm_dome"></p>
  <p><span>Attempts</span></p>
- <p><img src=" html\images\lm_attempts.webp" referrerpolicy="no-referrer" alt="lm_attempts"></p>
+ <p><img src=" html\images\lm_attempts.jpg" referrerpolicy="no-referrer" alt="lm_attempts"></p>
  <p><span>Final Version</span></p>
- <p><img src=" html\images\lm_dome_final.webp" referrerpolicy="no-referrer" alt="lm_dome_final"></p>
+ <p><img src=" html\images\lm_dome_final.jpg" referrerpolicy="no-referrer" alt="lm_dome_final"></p>
  <br><br>
  <p><img src="html\images\lightmeter_gif.gif" referrerpolicy="no-referrer" alt="lightmeter_gif"></p>
  <p>&nbsp;</p><h2 id='testing-method'><span>Testing method</span></h2>
  <p><span>While 3D prints could be a few hours long, but you could significantly reduce the amount of time taken for a prototype by manually cutting the CAD model in order to save time and gain more information form the print while testing it with other components.</span></p>
- <p><img src=" html\images\lm_testing.webp" referrerpolicy="no-referrer" alt="lm_testing"></p>
+ <p><img src=" html\images\lm_testing.jpg" referrerpolicy="no-referrer" alt="lm_testing"></p>
  <p>&nbsp;</p><h2 id='wiring'><span>Wiring</span></h2>
  <p><span>Well this was not planned.</span></p>
- <p><img src=" html\images\lm_wire.webp" referrerpolicy="no-referrer" alt="lm_wire"></p>
+ <p><img src=" html\images\lm_wire.jpg" referrerpolicy="no-referrer" alt="lm_wire"></p>
  <p>&nbsp;</p>
  <p>&nbsp;</p><hr />
  <p>&nbsp;</p>
  <p>&nbsp;</p>
- <p><img src=" html\images\lm_final.webp" referrerpolicy="no-referrer" alt="lm_final"></p>
+ <p><img src=" html\images\lm_final.jpg" referrerpolicy="no-referrer" alt="lm_final"></p>
  <p>&nbsp;</p>
  <p><span>id like to hear what you thought about the project. Email: </span><a href='mailto:aksavio@gmail.com' target='_blank' class='url'>aksavio@gmail.com</a></p>
  <br>
